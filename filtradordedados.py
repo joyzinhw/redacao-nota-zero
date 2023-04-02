@@ -7,11 +7,10 @@ tabela = pd.read_excel("essay-br.xlsx", engine='openpyxl')
 
 filtrados = tabela['score'] == 0
 
-print("dados filtrados:")
-print(tabela[filtrados])
 
 pd.get_option('display.max_rows')
 pd.set_option('display.max_row', 100)
+
 print("dados filtrados:")
 print(tabela[filtrados])
 
